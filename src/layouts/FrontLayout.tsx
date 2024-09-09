@@ -1,5 +1,5 @@
-import Footer from "../shared/Footer"
-import Navbar from "../shared/Navbar"
+import Footer from "../components/shared/Footer"
+import Navbar from "../components/shared/Navbar"
 
 type Props = {
     children: JSX.Element | JSX.Element[]

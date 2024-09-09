@@ -3,6 +3,7 @@ import { useTranslation } from 'react-i18next';
 import { Link } from 'react-router-dom';
 import sideBar from '../../assets/sideBarIcon.svg';
 import logo from '../../assets/abbon-logo.svg';
+import ProfilePicture from '../../components/profile/profilePicture';
 
 function Navbar() {
   
@@ -48,12 +49,12 @@ function Navbar() {
       <div className="container mx-auto flex justify-between items-center">
         <div className='flex items-center'>
           <Link to={"/"}>
-            <img src={logo} alt="logo" className="w-12 h-12"/>
+            <img src={logo} alt="logo" className="w-16 h-16"/>
           </Link>
         </div>
         <div className='flex space-x-6 items-center'>
           <div className='hidden md:flex'>
-            profile
+            <ProfilePicture size="w-16 h-16"/>
           </div>
           <div className='hidden md:flex'>
             Name Surname
@@ -80,7 +81,7 @@ function Navbar() {
         <div className="p-6 text-xl font-bold">Sidebar Menu</div>
         <ul className="space-y-4 p-4">
           <li>
-            <Link to="/">
+            <Link to="/" onClick={toggleSidebar}>
               {t('home')} 
             </Link>
           </li>

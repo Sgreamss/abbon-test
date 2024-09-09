@@ -2,6 +2,7 @@ import  { useState } from 'react';
 import { useTranslation } from 'react-i18next';
 import { Link } from 'react-router-dom';
 import sideBar from '../../assets/sideBarIcon.svg';
+import logo from '../../assets/abbon-logo.svg';
 
 function Navbar() {
   
@@ -46,7 +47,9 @@ function Navbar() {
     <nav className="bg-gray-800 text-white p-4">
       <div className="container mx-auto flex justify-between items-center">
         <div className='flex items-center'>
-          LOGO
+          <Link to={"/"}>
+            <img src={logo} alt="logo" className="w-12 h-12"/>
+          </Link>
         </div>
         <div className='flex space-x-6 items-center'>
           <div className='hidden md:flex'>

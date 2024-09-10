@@ -57,7 +57,7 @@ function Navbar() {
             <ProfilePicture size="w-16 h-16"/>
           </div>
           <div className='hidden md:flex'>
-            Name Surname
+            {t('name')} {t('surname')}
           </div>
           <button
               onClick={changeLanguage}

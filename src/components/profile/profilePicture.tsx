@@ -8,8 +8,6 @@ interface sizeProp {
 }
 
 const profilePicture:React.FC<sizeProp>=({ size = 'w-32 h-32' })=> {
-
-    //const [profilePic, setProfilePic] = useState<string | null>(getProfileImageFromLocalStorage);
     const {profilePic, setProfilePicture} = useProfile();
     const fileInputRef = useRef<HTMLInputElement | null>(null);
 

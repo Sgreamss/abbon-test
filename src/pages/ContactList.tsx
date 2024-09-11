@@ -1,7 +1,20 @@
+//import { useEffect, useState } from "react";
 import FrontLayout from "../layouts/FrontLayout"
+//import contactsList from '../contacts.json';
 
+// interface Contact {
+//   firstName: string;
+//   lastName: string;
+//   age: number;
+// }
 
-function ContactList() {
+ function ContactList() {
+//   const [contacts,setContacts] = useState<Contact[]>([]);
+
+//   useEffect( ()=>{
+//     setContacts(contacts);
+//   });
+
   return (
     <FrontLayout>
         <div>

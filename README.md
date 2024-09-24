@@ -1,6 +1,6 @@
 # Abbon-test
     
-This is a simple React project styled with Tailwind CSS. 
+React project with Tailwind CSS, Mobile Responsive, Multi-language
 
 ## Requirements 
 
